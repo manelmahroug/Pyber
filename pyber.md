@@ -150,13 +150,20 @@ plt.xlabel("Total Number of Rides")
 plt.xlim((0,40))
 plt.grid(True)
 
+lgnd = plt.legend(fontsize="small", mode="Expanded", 
+                  numpoints=1, scatterpoints=1, 
+                  loc="best", title="City Types", 
+                  labelspacing=0.5)
+lgnd.legendHandles[0]._sizes = [30]
+lgnd.legendHandles[1]._sizes = [30]
+lgnd.legendHandles[2]._sizes = [30]
 
 
 plt.show()
 ```
 
 
-![png](output_4_0.png)
+![png](pyber_files/pyber_4_0.png)
 
 
 
@@ -227,7 +234,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](pyber_files/pyber_7_0.png)
 
 
 
@@ -297,7 +304,7 @@ plt.show()
 ```
 
 
-![png](output_10_0.png)
+![png](pyber_files/pyber_10_0.png)
 
 
 # Pie Chart- Rides per city type
@@ -366,5 +373,5 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](pyber_files/pyber_13_0.png)
 
